@@ -72,22 +72,19 @@ export default function App() {
     saveToLS(newTodos)
   }
 
-
   return (
     <>
       <Navbar />
-      <div className="mx-3 md:container bg-slate-400 md:mx-auto my-5 rounded-xl p-5 min-h-[80vh] md:w-[35%]">
+      <div className="mx-3 md:container bg-slate-400 md:mx-auto my-10 rounded-xl p-5 min-h-[80vh] md:w-[35%]">
         <h1 className='font-bold text-center text-2xl'>iTask - Manage your ToDo's at one place</h1>
         <div className="addtodo my-5 flex flex-col gap-4">
           <h2 className="text-xl font-bold">Add a Todo</h2>
-
           <div className="flex">
             <input type="text" onChange={handleChange} value={todo} className='w-full rounded-full px-5 py-1' />
             <button onClick={handleAdd} disabled={todo.length < 3} className='bg-slate-700 disabled:bg-slate-600 hover:bg-slate-900 p-4 py-2 mx-2 text-white text-sm font-bold rounded-full'>
               Save
             </button>
           </div>
-
         </div>
 
         <input className='my-4' onChange={toggleFinished} type="checkbox" name="" checked={showFinished} />Show Finished
@@ -113,10 +110,10 @@ export default function App() {
             </div>
           })}
         </div>
-
       </div>
-
+      <footer className="fixed bottom-3 left-0 w-full text-center py-2">
+        Made with ❤️ By <b>"<a href="https://yourportfolio.com" target="_blank" rel="noopener noreferrer" className='font-bold hover:text-gray-700 hover:underline'>M Saif Ud Din</a>"</b>
+      </footer>
     </>
   )
 }
-
