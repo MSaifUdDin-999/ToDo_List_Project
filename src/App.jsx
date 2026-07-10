@@ -112,7 +112,7 @@ export default function App() {
         </div>
       </div>
       <footer className="fixed bottom-3 left-0 w-full text-center py-2">
-        Made with ❤️ By <b>"<a href="https://yourportfolio.com" target="_blank" rel="noopener noreferrer" className='font-bold hover:text-gray-700 hover:underline'>M Saif Ud Din</a>"</b>
+        Made with ❤️ By <b>"<a href="https://portfolio-m-saif-ud-din.vercel.app/" target="_blank" rel="noopener noreferrer" className='font-bold hover:text-gray-700 hover:underline'>M Saif Ud Din</a>"</b>
       </footer>
     </>
   )
